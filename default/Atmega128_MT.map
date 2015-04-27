@@ -1,0 +1,507 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                              Atmega128_MT.o (__mulsi3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                              Atmega128_MT.o (__udivmodsi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                              Atmega128_MT.o (__divmodsi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                              Atmega128_MT.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ftc                 0x2               Atmega128_MT.o
+j                   0x2               Atmega128_MT.o
+Ch                  0x1               Atmega128_MT.o
+fth                 0x2               Atmega128_MT.o
+lt                  0x2               Atmega128_MT.o
+i                   0x4               delay.o
+data                0x1               Atmega128_MT.o
+min                 0x2               Atmega128_MT.o
+sec                 0x2               Atmega128_MT.o
+s                   0x4               Atmega128_MT.o
+h                   0x4               Atmega128_MT.o
+hr                  0x2               Atmega128_MT.o
+ch                  0x1               Atmega128_MT.o
+Text                0x10              Atmega128_MT.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+LOAD Atmega128_MT.o
+LOAD lcd.o
+LOAD system.o
+LOAD delay.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x122c
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000008c                . = ALIGN (0x2)
+                0x0000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000008c                __ctors_start = .
+ *(.ctors)
+                0x0000008c                __ctors_end = .
+                0x0000008c                __dtors_start = .
+ *(.dtors)
+                0x0000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000008c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x0000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000008c        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000098       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000098                __do_copy_data
+ .init4         0x000000b2       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x000000b2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000c2        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x000000ca        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x000000ca                __vector_22
+                0x000000ca                __vector_28
+                0x000000ca                __vector_1
+                0x000000ca                __vector_32
+                0x000000ca                __vector_34
+                0x000000ca                __vector_24
+                0x000000ca                __vector_12
+                0x000000ca                __bad_interrupt
+                0x000000ca                __vector_6
+                0x000000ca                __vector_31
+                0x000000ca                __vector_3
+                0x000000ca                __vector_23
+                0x000000ca                __vector_30
+                0x000000ca                __vector_25
+                0x000000ca                __vector_11
+                0x000000ca                __vector_13
+                0x000000ca                __vector_17
+                0x000000ca                __vector_19
+                0x000000ca                __vector_7
+                0x000000ca                __vector_27
+                0x000000ca                __vector_5
+                0x000000ca                __vector_33
+                0x000000ca                __vector_4
+                0x000000ca                __vector_9
+                0x000000ca                __vector_2
+                0x000000ca                __vector_21
+                0x000000ca                __vector_15
+                0x000000ca                __vector_29
+                0x000000ca                __vector_8
+                0x000000ca                __vector_26
+                0x000000ca                __vector_14
+                0x000000ca                __vector_10
+                0x000000ca                __vector_16
+                0x000000ca                __vector_18
+                0x000000ca                __vector_20
+ .text          0x000000ce      0xe0a Atmega128_MT.o
+                0x0000020e                LCDSendTxt
+                0x000000de                EEPROM_read
+                0x0000039a                LCDSendInt
+                0x000001ac                UART_Init
+                0x00000d42                delay_msa
+                0x0000017c                PORT_Init
+                0x000000ee                E_Pulse
+                0x0000047a                delay_msc
+                0x000001fe                UART_Transmit
+                0x00000124                LCD_Init
+                0x000007e8                main
+                0x00000148                LCDSendCommand
+                0x000001ec                UART_Receive
+                0x000000f4                LCDSendChar
+                0x000000ec                Delay
+                0x00000604                delay_msb
+                0x0000024a                get_values
+                0x000000ce                EEPROM_write
+ .text          0x00000ed8      0x120 lcd.o
+                0x00000f2a                SEND_CHAR
+                0x00000ed8                _E
+                0x00000eea                SEND_CMD
+                0x00000f6c                SEND_STR
+                0x00000fa4                LCD_Ini
+ .text          0x00000ff8       0xbe system.o
+                0x00001064                SendCharUart1
+                0x00001094                Buzzer
+                0x00000ff8                InitPorts
+                0x00001026                InitTimers
+                0x00001048                InitUart1
+                0x00001082                ReceiveCharUart1_nonstop
+                0x00001074                ReceiveCharUart1
+ .text          0x000010b6       0xba delay.o
+                0x000010b6                delay_us
+                0x00001114                delay_ms
+ .text          0x00001170        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .text          0x00001170        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .text          0x00001170        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .text          0x00001170        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text          0x00001170        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x00001170                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001170       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                0x00001170                __mulsi3
+ .text.libgcc   0x000011ae       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                0x000011ae                __udivmodsi4
+ .text.libgcc   0x000011f2       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                0x000011f2                __divmodsi4
+ .text.libgcc   0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x00001228                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x00001228                exit
+                0x00001228                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001228        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000122c                _etext = .
+
+.data           0x00800100       0xa0 load address 0x0000122c
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .data          0x00800100       0xa0 Atmega128_MT.o
+                0x0080019e                Bl
+ .data          0x008001a0        0x0 lcd.o
+ .data          0x008001a0        0x0 system.o
+ .data          0x008001a0        0x0 delay.o
+ .data          0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .data          0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .data          0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .data          0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .data          0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008001a0                . = ALIGN (0x2)
+                0x008001a0                _edata = .
+                0x008001a0                PROVIDE (__data_end, .)
+
+.bss            0x008001a0       0x36
+                0x008001a0                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008001a0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .bss           0x008001a0        0x9 Atmega128_MT.o
+                0x008001a5                ctr
+                0x008001a0                led
+                0x008001a2                Line
+                0x008001a3                LCD_State
+ .bss           0x008001a9        0x0 lcd.o
+ .bss           0x008001a9        0x0 system.o
+ .bss           0x008001a9        0x0 delay.o
+ .bss           0x008001a9        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .bss           0x008001a9        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .bss           0x008001a9        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .bss           0x008001a9        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .bss           0x008001a9        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008001a9       0x29 Atmega128_MT.o
+                0x008001a9                ftc
+                0x008001ab                j
+                0x008001ad                Ch
+                0x008001ae                fth
+                0x008001b0                lt
+                0x008001b2                data
+                0x008001b3                min
+                0x008001b5                sec
+                0x008001b7                s
+                0x008001bb                h
+                0x008001bf                hr
+                0x008001c1                ch
+                0x008001c2                Text
+ COMMON         0x008001d2        0x4 delay.o
+                0x008001d2                i
+                0x008001d6                PROVIDE (__bss_end, .)
+                0x0000122c                __data_load_start = LOADADDR (.data)
+                0x000012cc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001d6        0x0
+                0x008001d6                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001d6                PROVIDE (__noinit_end, .)
+                0x008001d6                _end = .
+                0x008001d6                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 Atmega128_MT.o
+ .debug_aranges
+                0x00000020       0x20 lcd.o
+ .debug_aranges
+                0x00000040       0x20 system.o
+ .debug_aranges
+                0x00000060       0x20 delay.o
+
+.debug_pubnames
+                0x00000000      0x2c0
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x1ac Atmega128_MT.o
+ .debug_pubnames
+                0x000001ac       0x56 lcd.o
+ .debug_pubnames
+                0x00000202       0x8c system.o
+ .debug_pubnames
+                0x0000028e       0x32 delay.o
+
+.debug_info     0x00000000      0xa7c
+ *(.debug_info)
+ .debug_info    0x00000000      0x7c2 Atmega128_MT.o
+ .debug_info    0x000007c2      0x11e lcd.o
+ .debug_info    0x000008e0      0x105 system.o
+ .debug_info    0x000009e5       0x97 delay.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x425
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x29a Atmega128_MT.o
+ .debug_abbrev  0x0000029a       0xa3 lcd.o
+ .debug_abbrev  0x0000033d       0x7c system.o
+ .debug_abbrev  0x000003b9       0x6c delay.o
+
+.debug_line     0x00000000     0x12a1
+ *(.debug_line)
+ .debug_line    0x00000000      0xe1a Atmega128_MT.o
+ .debug_line    0x00000e1a      0x1de lcd.o
+ .debug_line    0x00000ff8      0x21d system.o
+ .debug_line    0x00001215       0x8c delay.o
+
+.debug_frame    0x00000000      0x240
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x130 Atmega128_MT.o
+ .debug_frame   0x00000130       0x60 lcd.o
+ .debug_frame   0x00000190       0x80 system.o
+ .debug_frame   0x00000210       0x30 delay.o
+
+.debug_str      0x00000000      0x266
+ *(.debug_str)
+ .debug_str     0x00000000      0x1b2 Atmega128_MT.o
+                                0x1eb (size before relaxing)
+ .debug_str     0x000001b2       0x2d lcd.o
+                                 0xf0 (size before relaxing)
+ .debug_str     0x000001df       0x6a system.o
+                                0x128 (size before relaxing)
+ .debug_str     0x00000249       0x1d delay.o
+                                 0x86 (size before relaxing)
+
+.debug_loc      0x00000000      0x705
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x64d Atmega128_MT.o
+ .debug_loc     0x0000064d       0x7c lcd.o
+ .debug_loc     0x000006c9       0x1e system.o
+ .debug_loc     0x000006e7       0x1e delay.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Atmega128_MT.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0xa8
+ .debug_ranges  0x00000000       0xa8 Atmega128_MT.o
